@@ -2,3 +2,7 @@ body {
  background-color: cyan;
  color: coral;
 }
+
+p {
+font-size: 200%;
+}
