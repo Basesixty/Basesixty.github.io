@@ -4,7 +4,12 @@ body {
  perspective: 200px;
 }
 
+h1 {
+ text-align: center;
+}
+
 h2 {
+ text-align: center;
  text-transform: uppercase;
  font-size: 200%;
 }
@@ -16,7 +21,13 @@ p {
 .crawltext {
  font-family: 'Roboto', sans-serif;
  transform: rotateX(30deg);
+ animation: animateCrawl 20s ease-in;
 }
 
 #partthree {
+}
+
+@keyframes animateCrawl {
+ 0% { transform: rotateX(30deg) translateY(400px); }
+ 100% { transform: roteateX(30deg) translateY(-300px); }
 }
