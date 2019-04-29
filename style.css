@@ -1,16 +1,22 @@
 body {
  color: rgb(250,215,77);
  background-color: rgb(0,0,0);
+ perspective: 200px;
+}
+
+h2 {
+ text-transform: uppercase;
+ font-size: 200%;
 }
 
 p {
-font-size: 150%;
+ text-align: justify;
 }
 
 .crawltext {
- font-size: 150%;
  font-family: 'Roboto', sans-serif;
+ transform: rotateX(30deg);
 }
 
-#partthree {color: rgb(150,43,96)
+#partthree {
 }
