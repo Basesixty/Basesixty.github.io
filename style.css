@@ -19,6 +19,8 @@ p {
 }
 
 .crawltext {
+ width: 20em;
+ margin: 0 auto;
  font-family: 'Roboto', sans-serif;
  transform: rotateX(30deg);
  animation: animateCrawl 20s ease-in;
