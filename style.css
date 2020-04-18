@@ -1,35 +1,26 @@
-body {
- color: rgb(250,215,77);
- background-color: rgb(0,0,0);
- perspective: 200px;
-}
-
-h1 {
- text-align: center;
-}
-
-h2 {
- text-align: center;
- text-transform: uppercase;
- font-size: 200%;
-}
-
-p {
- text-align: justify;
-}
-
-.crawltext {
- width: 20em;
- margin: 0 auto;
- font-family: 'Roboto', sans-serif;
- transform: rotateX(30deg);
- animation: animateCrawl 20s ease-in;
-}
-
-#partthree {
-}
-
-@keyframes animateCrawl {
- 0% { transform: rotateX(30deg) translateY(400px); }
- 100% { transform: roteateX(30deg) translateY(-300px); }
-}
+<html>
+<body style="background-color: cornflowerblue;">
+    <img id="otto" style="position:absolute; transition: all 0.5s;" src="Octodad.png" width="100" onmousedown="caughtit()" />
+    <p id="scoretext">score:00</p>
+</body>
+<script>
+    var score=0;
+    var seconds=0;
+    var timer=window.setInterval(moveit,1000);
+    function moveit(){
+        seconds++;
+        document.getElementById("otto").style.left=Math.random()*65+"%";
+        document.getElementById("otto").style.top=Math.random()*65+"%";
+        if(seconds>30){
+            clearInterval(timer);
+            alert("you scored: "+ score);
+            location.reload(); 
+        }
+    }
+    function caughtit(){
+        score++;
+        document.getElementById("scoretext").innerText="score: " +score;
+   }  
+   
+</script>
+</html>    
