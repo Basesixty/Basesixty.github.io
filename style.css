@@ -1,26 +1,10 @@
-<html>
-<body style="background-color: cornflowerblue;">
-    <img id="otto" style="position:absolute; transition: all 0.5s;" src="Octodad.png" width="100" onmousedown="caughtit()" />
-    <p id="scoretext">score:00</p>
-</body>
 <script>
-    var score=0;
-    var seconds=0;
-    var timer=window.setInterval(moveit,1000);
-    function moveit(){
-        seconds++;
-        document.getElementById("otto").style.left=Math.random()*65+"%";
-        document.getElementById("otto").style.top=Math.random()*65+"%";
-        if(seconds>30){
-            clearInterval(timer);
-            alert("you scored: "+ score);
-            location.reload(); 
-        }
+    var a=Math.round(Math.random()*10);
+    var b=Math.round(Math.random()*10);
+    answer=prompt("what is " +a+ " times " +b+ "?");
+    if(answer==a*b){
+        alert("correct");
+    } else {
+        alert("wrong!")
     }
-    function caughtit(){
-        score++;
-        document.getElementById("scoretext").innerText="score: " +score;
-   }  
-   
-</script>
-</html>
+    </script>
