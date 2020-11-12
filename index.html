@@ -1,42 +1,25 @@
-<!doctype html>
-
-<html lang="en">
-<head>
- <meta charset="utf-8"/>
- <title>a better title</title>
- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="style.css" />
- </head>
- <body>
- 
- 
- 
-<div class="crawltext">
-<h1>Episode IV</h1>
-  <h2>A New Hope</h2>
- <p>It is a period of civil war.
-rebel space ships, striking
-from a hidden base have won
-their first victory agianst
-the evil Galactec Empire.</p>
-
-  <p>During the battle, Rebel
-spies managed to steal secret
-plans to the Empires
-ultimate weapon, the DEaTH
-STAR, an armored space
-station with enough power to
-destroy an entire plant.</p>
-
-  <p id="partthree">Pursued by the Empire's
-sinister agents, Princes
-Leia races home aboard a
-starship, custodian of the
-stolen plans that can save
- people and restor
-fredom to the galaxy.....
-</p>
-  </div>
- 
- </body>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Bolt</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Basesixty.github.io.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Bolt</div>
+      </div>
+    </div>
+  </body>
 </html>
